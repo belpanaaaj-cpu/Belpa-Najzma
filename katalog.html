@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & Series - My Personal Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigasi Menu Atas -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="site-logo">Personal Letters</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="katalog.html" class="active">Reviews</a>
+            <a href="favorites.html">My Favorites</a>
+            <a href="biodata.html">About Me</a>
+        </div>
+    </div>
+    </nav>
+
+    <div class="main-container">
+        <h1>Daftar Review Movie & Series</h1>
+        <p>Cari judul tontonan atau sharing berdasarkan jenis dan genre favoritmu di bawah ini.</p>
+
+        <!-- Area Filter & Pencarian -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Cari judul film/series..." onkeyup="filterKatalog()">
+            
+            <select id="typeFilter" onchange="filterKatalog()">
+                <option value="All">Semua Tipe</option>
+                <option value="Movie">Movie</option>
+                <option value="Series">Series</option>
+            </select>
+
+            <select id="genreFilter" onchange="filterKatalog()">
+                <option value="All">Semua Genre</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Drama Comedy">Drama Comedy</option>
+                <option value="Horror Comedy">Horror Comedy</option>
+                <option value="Action">Action</option>
+                <option value="Musical">Musical</option>
+                <option value="Romcom">Romcom</option>
+                <option value="Comedy Mistery">Comedy Mistery</option>
+                <option value="Romance Fantasi">Romance Fantasi</option>
+            </select>
+        </div>
+
+        <!-- Wadah Kartu Ulasan (Diisi secara otomatis oleh JavaScript) -->
+        <div id="katalogContainer" class="grid-katalog"></div>
+    </div>
+
+    <!-- Menghubungkan ke File JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+/* 1. Variabel Warna Earth Tone */
+:root {
+    --bg-color: #eeddc8;       
+    --text-color: #4A3F35;     
+    --card-bg: #f7f7f6;        
+    --accent-color: #8C9970;   
+    --accent-hover: #75825A;    
+    --border-color: #b0a08e;   
+}
+
+/* 2. Pengaturan Dasar Halaman */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5dbcf;
+    font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4f4032;
+}
+
+.eyebrow {
+    font-size: 0.75em;      
+    color: #628124;           
+    font-weight: bold;       
+    letter-spacing: 1.0px;     
+    text-transform: uppercase; 
+    display: block;
+}
+
+.hero-title {
+    font-size: 3.5rem;         
+    color: #4A3F35;           
+    line-height: 1.5;          
+    margin: 30px 0;           
+}
+
+.hero-title em {
+    font-style: italic;
+    font-weight: normal;
+    color: #9d3802;
+}
+
+.hero-description {
+    font-size: 0,5rem;         
+    color: #6B5E52;           
+    line-height: 1.3;         
+    margin-top: 10px;
+}
+
+/* 3. Tampilan Menu Navigasi (<nav>) */
+.main-container {
+    max-width: 1100px;     
+    margin: 0 auto;        
+    padding: 20px 30px;    
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #3b3028; 
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Judul Website / Logo "Personal Letters" */
+.site-logo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f2ede4;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.site-logo:hover {
+    color: #d4c5b3;
+}
+
+/* Menu Navigasi */
+.nav-links a {
+    color: #f2ede4;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #c2b09b; 
+}
+
+.explore-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px; 
+    color: #f7f1eb;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #3c2514;
+    transition: all 0.2s ease;
+}
+
+.explore-link:hover {
+    color: #000000;
+    border-bottom-color: #4a3f35;
+}
+
+/* Garis Pembatas (Divider) & Footer */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #d4c5b3;
+    margin: 10px 0;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    color: #6b5e52;
+}
+
+.site-footer {
+    background-color: #3b3028;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-tagline {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    color: #f2ede4;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+/* 4. Pembungkus Konten Utama (.container) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+    background: transparent; 
+    box-shadow: none;      
+    border: none;       
+}
+.hero-frame:hover {
+    transform: translateY(-3px); 
+}
+
+/* Isi Dalam Bingkai */
+.frame-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Sub-teks Kecil Atas */
+.frame-small {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #5c7624;       
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Judul Utama di Dalam Bingkai */
+.frame-title {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 0.5rem;
+    font-weight: bold;
+    line-height: 1.15;
+   
+    background-color: #563c29;
+    color: #f2ede4;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;         
+    margin: 6px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Garis Pembatas Dekoratif di Dalam Bingkai */
+.frame-rule {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #4a3f35;
+    margin: 16px 0;
+}
+
+/* Keterangan Genre di Bawah Bingkai */
+.frame-caption {
+    font-size: 0.3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #453c34;
+    text-transform: uppercase;
+    line-height: 1.4;
+    display: block;
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT (UNTUK TAMPILAN HP)
+   ========================================== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Berubah jadi menumpuk di layar HP */
+        align-items: flex-start;
+        gap: 24px;
+    }
+    
+    .hero-art {
+        width: 100%;
+        max-width: 320px;
+        align-self: center; /* Bingkai berada di tengah pada layar HP */
+    }
+}
+
+/* 5. Judul dan Garis Pembatas */
+h1 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--accent-hover);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 25px 0;
+}
+
+/* 6. Styling Bagian Rekomendasi (<section>) */
+.recommendation {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 6px;
+}
+
+.recommendation a {
+    color: var(--accent-hover);
+    font-weight: bold;
+}
+
+.about-section {  
+    padding: 0px;                         
+    margin-top: 150px;
+    margin-bottom: 30px;             
+}
+
+.about-section h3 {
+    font-family: Georgia, 'Cambria', serif;
+    font-size: 1.0rem;
+    color: #3b3028;
+    margin-top: 0;              
+    margin-bottom: 8px;
+}
+
+.about-section p {
+    font-size: 0.70rem;
+    line-height: 1.6;             
+    color: #6b5e52;               
+    margin: 0;
+}
+
+/* 7. Fitur Filter dan Pencarian */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.controls input, .controls select {
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.controls input {
+    flex: 2;
+    min-width: 180px;
+}
+
+.controls select {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* 8. Layout Grid Kartu Ulasan */
+.grid-katalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* 9. Tampilan Kartu Film/Series */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(241, 241, 241, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: var(--text-color);
+}
+
+.card-detail {
+    font-size: 0.88em;
+    margin: 4px 0;
+}
+
+.verdict {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* 10. Tombol Favorit Interaktif */
+.fav-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.fav-btn.active {
+    background-color: #449242; 
+    color: white;
+}
+
+.fav-btn:hover {
+    filter: brightness(0.95);
+}
